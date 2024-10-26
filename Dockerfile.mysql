@@ -1,0 +1,5 @@
+# Usa l'immagine MySQL ufficiale come base
+FROM mariadb:10.5
+
+# Copia il file SQL nella directory di lavoro del contenitore
+COPY bookVaultDB.sql /docker-entrypoint-initdb.d/
